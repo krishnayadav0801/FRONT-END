@@ -1,0 +1,138 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  min-height: 100vh;
+  background: #475;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Utility */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* ========== HEADER & FOOTER ========== */
+header,
+footer {
+  position: sticky;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  z-index: 10;
+}
+
+header {
+  top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  background: #fff;
+  border-bottom: 2px solid #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  flex: 1;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Cards */
+.card {
+  background: #dbd5e1;
+  padding: 1rem;
+  border-radius: 12px;
+  scroll-margin-top: 6rem;
+}
+
+/* ========== BREAKPOINTS ========== */
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  body {
+    background: green;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  body {
+    background: gold;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  body {
+    background: firebrick;
+  }
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile landscape only */
+@media (max-width: 768px) and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background: dodgerblue;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4rem;
+  }
+}
