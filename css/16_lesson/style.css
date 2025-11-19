@@ -1,0 +1,86 @@
+body {
+  min-height: 100px;
+  background-color: aliceblue;
+  background-image: url(download.jpg) ,linear-gradient(steelblue, white, purple, red);
+        background-repeat: repeat-y ;
+        background-position: center;
+        background-size: 20%, auto;
+        background: repeat-y right center url(download.jpg);
+}
+
+.profile-pic-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 35%;
+}
+
+.hero {
+  border-bottom: 2px solid #333;
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+
+  background-image: url('download.jpg');
+  background-color: rgba(137, 137, 87, 0.5);
+  background-size: contain;
+}
+
+.h1 {
+  font-size: 500%;
+  color: black;
+  background: white;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.profile-pic-figure img {
+
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 5%;
+}
+
+img {
+  display: block;
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+.example img {
+  width: 25%;
+  height: auto;
+}
+
+/* utility classes */
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url(download.jpg);
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
